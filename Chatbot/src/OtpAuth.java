@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/OtpAuth")
 public class OtpAuth extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+       //OTP Authentication
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String userOtp=request.getParameter("otp");
 		HttpSession session=request.getSession();
