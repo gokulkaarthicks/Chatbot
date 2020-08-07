@@ -23,7 +23,7 @@ public class OtpAuth extends HttpServlet {
 		String generatedOtp=(String)session.getAttribute("otp");
 		if(generatedOtp.equals(userOtp)){
 			if(check.equals("user"))
-				response.sendRedirect("chat.html");
+				response.sendRedirect("chat.jsp");
 			else
 				response.sendRedirect("Loggedin.jsp");
 				
