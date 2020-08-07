@@ -1,6 +1,6 @@
 package com.dbutil;
 
-public class tempInfo {
+public class TempInfo {
 	private String Name;
 	private String AccountNumber;
 	private String Reason;
@@ -46,7 +46,7 @@ public class tempInfo {
 		return Confirmation;
 	}
 
-	public tempInfo(String name, String accountNumber, String reason, String repaymentDate, String currentState,
+	public TempInfo(String name, String accountNumber, String reason, String repaymentDate, String currentState,
 			long loanNumber, long mobileNumber, String email, String confirmation) {
 		super();
 		Name = name;

@@ -9,20 +9,24 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.dbutil.*;
+import com.dbutil.Validate;
+import com.dbutil.TempInfo;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 
-@WebServlet("/getuser")
-public class getuser extends HttpServlet {
+
+@WebServlet("/Userdata")
+public class Userdata extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+       
+ 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		ArrayList<userInfo> al=Validate.getUsersData();
+		ArrayList<TempInfo> al=Validate.getData();
 		Gson gson = new Gson();
-		String element = gson.toJson(al, new TypeToken<ArrayList<tempInfo>>() {}.getType());
-		System.out.println(element);
+		String element = gson.toJson(al, new TypeToken<ArrayList<TempInfo>>() {}.getType());
 		response.getWriter().append(element);
 	}
 
+	
 
 }

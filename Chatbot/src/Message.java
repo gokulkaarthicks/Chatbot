@@ -18,7 +18,7 @@ public class Message extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     watson obj=new watson(); 
     private String temp="Nothing"; 
-    tempInfoBuilder data=new tempInfoBuilder();
+    TempInfoBuilder data=new TempInfoBuilder();
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -62,9 +62,9 @@ public class Message extends HttpServlet {
         	data=data.setCurrentState(ip);
         if(temp.contains(" do you want to continue")){
         	data=data.getConfirmation(ip);
-        	tempInfo dat=data.getObj();
+        	TempInfo dat=data.getObj();
         	Validate.insertData(dat);
-        	data=new tempInfoBuilder();
+        	data=new TempInfoBuilder();
         }
         if(ip.equals("quit")){
         	writer.println("SERVER CLOSED !!!");

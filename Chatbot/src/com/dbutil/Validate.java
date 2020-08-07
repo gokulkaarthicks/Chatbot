@@ -71,7 +71,7 @@ public class Validate {
 			}
 			return -1;
 	  }
-	  public static boolean insertData(tempInfo obj){
+	  public static boolean insertData(TempInfo obj){
 		  String SQL = "INSERT INTO tempInfo Values(?,?,?,?,?,?,?,?,?)";
 			try (Connection connection = DButil.getDataSource().getConnection(); PreparedStatement st = connection.prepareStatement(SQL);) {
 				st.setString(1,obj.getName());
@@ -96,14 +96,14 @@ public class Validate {
 			
 		  return false;
 	  }
-	  public static ArrayList<userInfo> getUsersData(){
-		  ArrayList<userInfo> al=new ArrayList<userInfo>();
+	  public static ArrayList<UserInfo> getUsersData(){
+		  ArrayList<UserInfo> al=new ArrayList<UserInfo>();
 		  String SQL = "SELECT * FROM users";
 			try (Connection connection = DButil.getDataSource().getConnection(); PreparedStatement st = connection.prepareStatement(SQL);) {
 				ResultSet rs = st.executeQuery();
 				
 				while(rs.next()){
-					userInfo ui=new userInfo();
+					UserInfo ui=new UserInfo();
 					ui.setEmail(rs.getString("email"));
 					ui.setUrole(rs.getString("userRole"));
 					ui.setUpass(rs.getString("userPassword"));
@@ -118,14 +118,14 @@ public class Validate {
 		  return al;
 	  }
 	  
-	  public static ArrayList<tempInfo> getData(){
-		  ArrayList<tempInfo> al=new ArrayList<tempInfo>();
+	  public static ArrayList<TempInfo> getData(){
+		  ArrayList<TempInfo> al=new ArrayList<TempInfo>();
 		  String SQL = "SELECT * FROM tempInfo";
 			try (Connection connection = DButil.getDataSource().getConnection(); PreparedStatement st = connection.prepareStatement(SQL);) {
 				ResultSet rs = st.executeQuery();
 				
 				while(rs.next()){
-					tempInfoBuilder tb=new tempInfoBuilder();
+					TempInfoBuilder tb=new TempInfoBuilder();
 					tb=tb.setName(rs.getString("Name"));
 					tb=tb.setAccountNumber(rs.getString("Accountnumber"));
 					tb=tb.setReason(rs.getString("reason"));

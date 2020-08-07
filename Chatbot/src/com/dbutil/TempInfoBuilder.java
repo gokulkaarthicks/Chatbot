@@ -1,6 +1,6 @@
 package com.dbutil;
 
-public class tempInfoBuilder {
+public class TempInfoBuilder {
 	private String Name;
 	private String AccountNumber;
 	private String Reason;
@@ -11,46 +11,46 @@ public class tempInfoBuilder {
 	private long MobileNumber;
 	private String email;
 
-	public tempInfoBuilder setName(String name) {
+	public TempInfoBuilder setName(String name) {
 		Name = name;
 		return this;
 	}
-	public tempInfoBuilder setAccountNumber(String accountNumber) {
+	public TempInfoBuilder setAccountNumber(String accountNumber) {
 		AccountNumber = accountNumber;
 		return this;
 	}
 	
-	public tempInfoBuilder setReason(String reason) {
+	public TempInfoBuilder setReason(String reason) {
 		Reason = reason;
 		return this;
 	}
-	public tempInfoBuilder setRepaymentDate(String repaymentDate) {
+	public TempInfoBuilder setRepaymentDate(String repaymentDate) {
 		RepaymentDate = repaymentDate;
 		return this;
 	}
-	public tempInfoBuilder setCurrentState(String currentState) {
+	public TempInfoBuilder setCurrentState(String currentState) {
 		CurrentState = currentState;
 		return this;
 	}
-	public tempInfoBuilder getConfirmation(String con) {
+	public TempInfoBuilder getConfirmation(String con) {
 		Confirmation = con;
 		return this;
 	}
-	public tempInfoBuilder setLoanNumber(long loanNumber) {
+	public TempInfoBuilder setLoanNumber(long loanNumber) {
 		LoanNumber = loanNumber;
 		return this;
 	}
-	public tempInfoBuilder setMobileNumber(long mobileNumber) {
+	public TempInfoBuilder setMobileNumber(long mobileNumber) {
 		MobileNumber = mobileNumber;
 		return this;
 	}
-	public tempInfoBuilder setEmail(String email) {
+	public TempInfoBuilder setEmail(String email) {
 		this.email = email;
 		return this;
 	}
 
-	public tempInfo getObj(){
-		return (new tempInfo(Name,AccountNumber,Reason,RepaymentDate,CurrentState,LoanNumber,MobileNumber,email,Confirmation));
+	public TempInfo getObj(){
+		return (new TempInfo(Name,AccountNumber,Reason,RepaymentDate,CurrentState,LoanNumber,MobileNumber,email,Confirmation));
 	}
 
 }

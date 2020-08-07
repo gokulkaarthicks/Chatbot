@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.dbutil.Validate;
 
-@WebServlet("/deleteusers")
-public class deleteusers extends HttpServlet {
+@WebServlet("/Deleteusers")
+public class Deleteusers extends HttpServlet {
  
 	private static final long serialVersionUID = 1L;
 

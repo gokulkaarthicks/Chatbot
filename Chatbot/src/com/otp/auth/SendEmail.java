@@ -70,7 +70,7 @@ public class SendEmail {
             message.setText(Integer.toString(rand_int1));
             }else if(flag==1){
                 message.setSubject("Moratorium Request Accepted!");
-                message.setText("Respected Sir,\n\t\tCongrats,Your Request For Moratorium has been accepted.\nThank You");
+                message.setText("Respected Sir,\n\t\t\tCongrats,Your Request For Moratorium has been accepted.\n\n\n\t\t\t\t\tThank You");
             }else{
                 message.setSubject("Moratorium Request Rejected!");
                 message.setText("Respected Sir,\n\t\tSorry,Your Request For Moratorium has been rejected.\nThank You");

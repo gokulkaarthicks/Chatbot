@@ -76,7 +76,7 @@ session.removeAttribute("username");
 <script>
 function getData(){
 	var myObject
-	$.get("userdata",function(data, status){
+	$.get("Userdata",function(data, status){
 		myObject = eval('(' + data + ')');
 		var container=document.getElementsByClassName("container");
 		var rowDiv = document.createElement("DIV");
@@ -174,8 +174,8 @@ function addDiv(name,accno,reason,repay,state,conf,email,ln,mn){
 	eleB.setAttribute("href","javascript:{}");
 	eleB.setAttribute("style","padding: 10px");
 	var ak=accno.toString();
-	eleA.setAttribute("onclick","$.post(\"deleteuserdata\",{accno:"+("1"+accno+"0")+"},function(data, status){document.getElementsByName('"+'d'+accno+"')[0].remove();});");
-	eleB.setAttribute("onclick","$.post(\"deleteuserdata\",{accno:"+("2"+accno+"0")+"},function(data, status){document.getElementsByName('"+'d'+accno+"')[0].remove();});");
+	eleA.setAttribute("onclick","$.post(\"Deleteuserdata\",{accno:"+("1"+accno+"0")+"},function(data, status){document.getElementsByName('"+'d'+accno+"')[0].remove();});");
+	eleB.setAttribute("onclick","$.post(\"Deleteuserdata\",{accno:"+("2"+accno+"0")+"},function(data, status){document.getElementsByName('"+'d'+accno+"')[0].remove();});");
 	h5.innerText="Name: "+name;
 	//console.log(email);
 	eleP.innerText="Account No: "+accno+"\nReason: "+reason+"\n Repayment Date: "+repay+"\n Current Economic Status: "+state+"\n Confirmation: "+conf+"\n Email id: "+email+"\n Loan Number: "+ln+"\n Mobile Number: "+mn;
@@ -194,7 +194,7 @@ function addDiv(name,accno,reason,repay,state,conf,email,ln,mn){
 }
 function getData1(){
 	var myObject
-	$.get("getuser",function(data, status){
+	$.get("Getuser",function(data, status){
 		myObject = eval('(' + data + ')');
 		var container=document.getElementsByClassName("container");
 		var rowDiv = document.createElement("DIV");
@@ -273,7 +273,7 @@ function addDiv1(name,email,role){
 	eleA.setAttribute("class", "btn btn-primary");
 	eleA.setAttribute("name", email);
 	eleA.setAttribute("href","javascript:{}");	
-	eleA.setAttribute("onclick","$.post(\"deleteusers\",{email:\""+email+"\"},function(data){document.getElementsByName('"+'d'+email+"')[0].remove();})");
+	eleA.setAttribute("onclick","$.post(\"Deleteusers\",{email:\""+email+"\"},function(data){document.getElementsByName('"+'d'+email+"')[0].remove();})");
 	//eleA.setAttribute("href","http://localhost:6065/Login/Loggedin.jsp");
 	h5.innerText="Name: "+name;
 	eleP.innerText="User Name: "+name+"\nUser Role: "+role+"\n Email id: "+email;

@@ -1,6 +1,6 @@
 package com.dbutil;
 
-public class userInfo {
+public class UserInfo {
 	String uname;
 	String upass;
 	String email;

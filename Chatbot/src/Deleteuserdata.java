@@ -11,8 +11,8 @@ import com.dbutil.Validate;
 import com.otp.auth.SendEmail;
 
 
-@WebServlet("/deleteuserdata")
-public class deleteuserdata extends HttpServlet {
+@WebServlet("/Deleteuserdata")
+public class Deleteuserdata extends HttpServlet {
 	private static final long serialVersionUID = 1L;
    
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
