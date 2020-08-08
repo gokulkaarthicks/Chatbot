@@ -21,7 +21,7 @@ Moratorium Chatbot is an AI enabled chatbot to fetch information from users to p
 [MySQL](https://downloads.mysql.com/archives/installer/)
 ## Dataset
 
-[names](https://drive.google.com/file/d/11taBHtPFwdFbtDoBYzbUNpBYh1YwhtnR/view?usp=sharing) (20000+)
+[**names**](https://drive.google.com/file/d/11taBHtPFwdFbtDoBYzbUNpBYh1YwhtnR/view?usp=sharing) (20000+)
 ## Skill
 **ID**  : 8d21672c-de0b-4fac-9c7f-065755153b8d
 
@@ -30,4 +30,4 @@ Moratorium Chatbot is an AI enabled chatbot to fetch information from users to p
 **Key** : YJITEf0TJLwL-d_GPeJuKlSMEkRzN6RQlitTEirI4MsT
 ## Documentation
 
-[UML](https://drive.google.com/file/d/1fZHsmKfLQfFe6FQaoerPtYZhXF1v_ubm/view?usp=sharing)
+[**UML**](https://drive.google.com/file/d/1fZHsmKfLQfFe6FQaoerPtYZhXF1v_ubm/view?usp=sharing)
