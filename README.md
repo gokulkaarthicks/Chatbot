@@ -1,6 +1,7 @@
 <img src="https://simpleicon.com/wp-content/uploads/coin-money-2.png" width="80">
 
 # Moratorium-Bot
+[![GitHub issues](https://img.shields.io/github/issues/gokulkaarthicks/Moratorium-bot?style=flat-square)](https://github.com/gokulkaarthicks/Moratorium-bot/issues)
 ## Description
 Moratorium Chatbot is an AI enabled chatbot to fetch information from users to provide information to the manager.  
 ## Features
