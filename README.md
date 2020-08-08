@@ -3,13 +3,12 @@
 # Moratorium-Bot
 [![GitHub issues](https://img.shields.io/github/issues/gokulkaarthicks/Moratorium-bot?style=flat-square)](https://github.com/gokulkaarthicks/Moratorium-bot/issues)
 ## Description
-Moratorium Chatbot is an AI enabled chatbot to fetch information from users to provide information to the manager.  
+Moratorium Chatbot is an AI enabled chatbot to fetch information from users to provide information to the manager.
 ## Features
 - Interactive Chatbot to fetch the information's from the user's
 - OTP based Authentication 
 - Admin Access Control for the manual acceptance/rejection of the application
 - Application status notifier through email for users   
-
 ## Dependencies
 [Watson](https://mvnrepository.com/artifact/com.ibm.watson) (v8.5)
 
@@ -29,3 +28,6 @@ Moratorium Chatbot is an AI enabled chatbot to fetch information from users to p
 **URL** : https://api.au-syd.assistant.watson.cloud.ibm.com/instances/6dd0c11c-238d-4c27-a964-2af89054a00e/v2/assistants/8d21672c-de0b-4fac-9c7f-065755153b8d/sessions
 
 **Key** : YJITEf0TJLwL-d_GPeJuKlSMEkRzN6RQlitTEirI4MsT
+## Documentation
+
+[UML](https://drive.google.com/file/d/1fZHsmKfLQfFe6FQaoerPtYZhXF1v_ubm/view?usp=sharing)
